@@ -1,0 +1,43 @@
+{
+  "name": "investor",
+  "plural": "investors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "organization": {
+      "type": "string",
+      "required": true
+    },
+    "preferedSport": {
+      "type": "string"
+    },
+    "preferedLocation": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+      "champs": {
+      "type": "hasMany",
+      "model": "champ",
+      "foreignKey": ""
+      }
+  },
+  "acls": [],
+  "methods": {}
+}

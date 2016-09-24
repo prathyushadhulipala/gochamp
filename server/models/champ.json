@@ -1,0 +1,70 @@
+{
+  "name": "champ",
+  "plural": "champs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "preferedSport": {
+      "type": "string",
+      "required": true
+    },
+    "schoolName": {
+      "type": "string",
+      "required": true
+    },
+    "parentName": {
+      "type": "string",
+      "required": true
+    },
+    "parentContact": {
+      "type": "number"
+    },
+    "champLocation": {
+      "type": "string",
+      "required": true
+    },
+    "investorID": {
+      "type": "number"
+    },
+    "mentorID": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+      
+      "mentors": {
+      "type": "hasOne",
+      "model": "mentor",
+      "foreignKey": "mentorID"
+  },
+    "achievements": {
+      "type": "hasMany",
+      "model": "achievement",
+      "foreignKey": ""
+  },
+    "investors": {
+    "type": "hasOne",
+    "model": "investor",
+    "foreignKey": "investorID"
+  }
+  },
+  "acls": [],
+  "methods": {}
+}

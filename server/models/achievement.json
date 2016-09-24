@@ -1,0 +1,57 @@
+{
+  "name": "achievement",
+  "plural": "achievements",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "champID": {
+      "type": "number",
+      "required": true
+    },
+    "mentorID": {
+      "type": "number",
+      "required": true
+    },
+    "eventID": {
+      "type": "number",
+      "required": true
+    },
+    "achievedSport": {
+      "type": "string",
+      "required": true
+    },
+    "achievedRank": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+      
+      "mentors": {
+      "type": "hasOne",
+      "model": "mentor",
+      "foreignKey": "mentorID"
+  },
+    "achievements": {
+      "type": "hasMany",
+      "model": "achievement",
+      "foreignKey": ""
+  },
+    "investors": {
+    "type": "hasOne",
+    "model": "investor",
+    "foreignKey": "investorID"
+  }
+
+  },
+  "acls": [],
+  "methods": {}
+}

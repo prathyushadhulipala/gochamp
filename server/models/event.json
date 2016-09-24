@@ -1,0 +1,72 @@
+{
+  "name": "event",
+  "plural": "events",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "sports": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "organizer": {
+      "type": "string",
+      "required": true
+    },
+    "addressLine1": {
+      "type": "string",
+      "required": true
+    },
+    "addressLine2": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "gpsLocation": {
+      "type": "geopoint",
+      "required": true
+    },
+    "organizerContact": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+      "achievements": {
+      "type": "hasMany",
+      "model": "achievement",
+      "foreignKey": ""
+  }
+
+  },
+  "acls": [],
+  "methods": {}
+}

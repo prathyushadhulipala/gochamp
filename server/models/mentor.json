@@ -1,0 +1,58 @@
+{
+  "name": "mentor",
+  "plural": "mentors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "number",
+      "required": true
+    },
+    "role": {
+      "type": "number",
+      "required": true
+    },
+    "schoolName": {
+      "type": "string",
+      "required": true
+    },
+    "addressLine1": {
+      "type": "string",
+      "required": true
+    },
+    "addressLine2": {
+      "type": "string",
+      "required": true
+    },
+    "pincode": {
+      "type": "number",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+      "champs": {
+    "type": "hasMany",
+    "model": "champ",
+    "foreignKey": ""
+  }
+
+  },
+  "acls": [],
+  "methods": {}
+}

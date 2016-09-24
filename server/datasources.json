@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqlds": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "gochamp",
+    "password": "gochamp",
+    "name": "mysqlds",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
