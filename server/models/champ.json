@@ -8,20 +8,16 @@
   },
   "properties": {
     "firstName": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "lastName": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "preferedSport": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "schoolName": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "pocContact": {
       "type": "string"

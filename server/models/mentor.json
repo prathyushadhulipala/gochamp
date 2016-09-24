@@ -8,40 +8,31 @@
   },
   "properties": {
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "role": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "schoolName": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "addressLine1": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "addressLine2": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "pincode": {
-      "type": "number",
-      "required": true
+      "type": "number"
     },
     "city": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "state": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "contact": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   },
   "validations": [],

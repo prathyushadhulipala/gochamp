@@ -8,12 +8,19 @@
   },
   "properties": {
     "achievedSport": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "achievedRank": {
-      "type": "string",
-      "required": true
+      "type": "string"
+    },
+    "distance": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "achievedDate": {
+      "type": "string"
     }
   },
   "validations": [],

@@ -8,12 +8,10 @@
   },
   "properties": {
     "mediaType": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "mediaURL": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   },
   "validations": [],
