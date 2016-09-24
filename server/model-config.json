@@ -51,5 +51,9 @@
   "achievement": {
     "dataSource": "mysqlds",
     "public": true
+  },
+  "champgallery": {
+    "dataSource": "mysqlds",
+    "public": true
   }
 }

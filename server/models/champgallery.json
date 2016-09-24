@@ -1,41 +1,31 @@
 {
-  "name": "investor",
-  "plural": "investors",
+  "name": "champgallery",
+  "plural": "champgalleries",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
+    "mediaType": {
       "type": "string",
       "required": true
     },
-    "firstName": {
-      "type": "string",
+    "champID": {
+      "type": "number",
       "required": true
     },
-    "lastName": {
+    "mediaURL": {
       "type": "string",
       "required": true
-    },
-    "organization": {
-      "type": "string",
-    },
-    "preferedSport": {
-      "type": "string"
-    },
-    "preferedLocation": {
-      "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "champs": {
-      "type": "hasMany",
+      "champs": {
+      "type": "hasOne",
       "model": "champ",
-      "foreignKey": ""
-    }
+      "foreignKey": "champID"
   },
   "acls": [],
   "methods": {}

@@ -60,12 +60,11 @@
   },
   "validations": [],
   "relations": {
-      "achievements": {
+    "achievements": {
       "type": "hasMany",
       "model": "achievement",
       "foreignKey": ""
-  }
-
+    }
   },
   "acls": [],
   "methods": {}

@@ -48,22 +48,26 @@
   },
   "validations": [],
   "relations": {
-      
-      "mentors": {
+    "mentors": {
       "type": "hasOne",
       "model": "mentor",
       "foreignKey": "mentorID"
-  },
+    },
     "achievements": {
       "type": "hasMany",
       "model": "achievement",
       "foreignKey": ""
-  },
+    },
     "investors": {
-    "type": "hasOne",
-    "model": "investor",
-    "foreignKey": "investorID"
-  }
+      "type": "hasOne",
+      "model": "investor",
+      "foreignKey": "investorID"
+    },
+     "champsgalleries": {
+      "type": "hasMany",
+      "model": "champsgallery",
+      "foreignKey": ""
+    },
   },
   "acls": [],
   "methods": {}

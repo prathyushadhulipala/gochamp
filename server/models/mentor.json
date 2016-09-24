@@ -46,12 +46,11 @@
   },
   "validations": [],
   "relations": {
-      "champs": {
-    "type": "hasMany",
-    "model": "champ",
-    "foreignKey": ""
-  }
-
+    "champs": {
+      "type": "hasMany",
+      "model": "champ",
+      "foreignKey": ""
+    }
   },
   "acls": [],
   "methods": {}
