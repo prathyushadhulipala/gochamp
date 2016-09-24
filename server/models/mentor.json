@@ -7,16 +7,12 @@
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "number",
-      "required": true
-    },
     "name": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "role": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "schoolName": {
@@ -40,6 +36,10 @@
       "required": true
     },
     "state": {
+      "type": "string",
+      "required": true
+    },
+    "contact": {
       "type": "string",
       "required": true
     }

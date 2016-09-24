@@ -11,22 +11,13 @@
       "type": "string",
       "required": true
     },
-    "champID": {
-      "type": "number",
-      "required": true
-    },
     "mediaURL": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
-  "relations": {
-      "champs": {
-      "type": "hasOne",
-      "model": "champ",
-      "foreignKey": "champID"
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

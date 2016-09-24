@@ -55,5 +55,9 @@
   "champgallery": {
     "dataSource": "mysqlds",
     "public": true
+  },
+  "sport": {
+    "dataSource": "mysqlds",
+    "public": true
   }
 }

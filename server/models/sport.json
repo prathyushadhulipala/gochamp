@@ -1,17 +1,13 @@
 {
-  "name": "achievement",
-  "plural": "achievements",
+  "name": "sport",
+  "plural": "sports",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "achievedSport": {
-      "type": "string",
-      "required": true
-    },
-    "achievedRank": {
+    "sportName": {
       "type": "string",
       "required": true
     }

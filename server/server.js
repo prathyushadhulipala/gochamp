@@ -17,6 +17,20 @@ app.start = function() {
   });
 };
 
+app.get('/data', function(req, res, next){
+    
+     var dataSource = app.datasources.mysqlds;
+     dataSource.autoupdate(['champ','event','champgallery','investor','mentor','achievement','sport'], function(err){
+         
+         if(err){
+             res.send('Failed to auto migrate with error'+err);
+         }
+         else{
+             res.send('Auto Migration successful');
+         }
+         
+     });
+});
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
 boot(app, __dirname, function(err) {

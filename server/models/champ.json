@@ -7,10 +7,6 @@
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "number",
-      "required": true
-    },
     "firstName": {
       "type": "string",
       "required": true
@@ -27,47 +23,25 @@
       "type": "string",
       "required": true
     },
-    "parentName": {
-      "type": "string",
-      "required": true
-    },
-    "parentContact": {
-      "type": "number"
+    "pocContact": {
+      "type": "string"
     },
     "champLocation": {
-      "type": "string",
-      "required": true
-    },
-    "investorID": {
-      "type": "number"
-    },
-    "mentorID": {
-      "type": "number",
-      "required": true
+      "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "mentors": {
-      "type": "hasOne",
-      "model": "mentor",
-      "foreignKey": "mentorID"
-    },
     "achievements": {
       "type": "hasMany",
       "model": "achievement",
       "foreignKey": ""
     },
-    "investors": {
-      "type": "hasOne",
-      "model": "investor",
-      "foreignKey": "investorID"
-    },
-     "champsgalleries": {
+    "champgalleries": {
       "type": "hasMany",
-      "model": "champsgallery",
+      "model": "champgallery",
       "foreignKey": ""
-    },
+    }
   },
   "acls": [],
   "methods": {}
